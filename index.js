@@ -36,9 +36,9 @@ class ServerlessSyncS3Buckets {
         };
 
         this.hooks = {
-            // Run after the deploy event
+            // Run after the serverless event
             'after:deploy:deploy': () => Promise.bind(this).then(this.syncDirectory),
-            'before:remove:remove': () => Promise.bind(this).then(this.removeDirectory),
+            //'before:remove:remove': () => Promise.bind(this).then(this.removeDirectory),
             'after:aws:info:displayStackOutputs': () => Promise.bind(this).then(this.s3BucketInfo),
             // Run when using commands
             'syncToS3:sync': () => Promise.bind(this).then(this.syncDirectory),
