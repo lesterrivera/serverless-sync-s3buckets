@@ -1,0 +1,34 @@
+{
+  "name": "serverless-sync-s3buckets",
+  "version": "1.0.0",
+  "description": "A Serverless Framework plugin to sync contents of a local directory with S3 buckets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "serverless",
+    "s3",
+    "sls",
+    "serverless framework plugin",
+    "plugin",
+    "s3bucket",
+    "aws"
+  ],
+  "author": "https://github.com/lesterrivera",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lesterrivera/serverless-syncs3buckets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lesterrivera/serverless-sync-s3buckets/issues"
+  },
+  "homepage": "https://github.com/lesterrivera/serverless-sync-s3buckets",
+  "dependencies": {
+    "@monolambda/s3": "^1.0.1",
+    "aws-sdk": "^2.96.0",
+    "bluebird": "^3.5.0",
+    "chalk": "^2.1.0"
+  }
+}
