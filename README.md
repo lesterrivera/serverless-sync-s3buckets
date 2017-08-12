@@ -65,7 +65,7 @@ Run `serverless deleteFromS3`, to remove content from s3 buckets.
 
 Per request, the plugin does NOT remove content from the s3 buckets when you run `serverless remove`.
 
-# Releases
+## Releases
 
 - August 2017 - initial release with full lifecycle support for s3 buckets.
 
