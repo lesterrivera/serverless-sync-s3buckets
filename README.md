@@ -1,4 +1,4 @@
-# ⚡️ Serverless Plugin to sync content to S3 Buckets
+# ⚡️ Serverless Plugin to sync content to s3 Buckets
 
 A [Serverless Framework](https://serverless.com) plugin to sync contents of local directories to one or more s3 buckets.
 
