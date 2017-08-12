@@ -8,6 +8,7 @@
   },
   "keywords": [
     "serverless",
+    "serverless framework",
     "s3",
     "sls",
     "serverless framework plugin",
@@ -16,7 +17,7 @@
     "aws"
   ],
   "author": "https://github.com/lesterrivera",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/lesterrivera/serverless-syncs3buckets.git"
