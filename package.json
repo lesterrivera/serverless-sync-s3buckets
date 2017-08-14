@@ -1,6 +1,6 @@
 {
   "name": "serverless-sync-s3buckets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Serverless Framework plugin to sync contents of a local directory with S3 buckets.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lesterrivera/serverless-syncs3buckets.git"
+    "url": "https://github.com/lesterrivera/serverless-sync-s3buckets.git"
   },
   "bugs": {
     "url": "https://github.com/lesterrivera/serverless-sync-s3buckets/issues"
