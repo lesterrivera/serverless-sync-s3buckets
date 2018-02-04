@@ -229,7 +229,7 @@ class ServerlessSyncS3Buckets {
     getCredentials() {
       let credentials = null;
       if (this.serverless.service.provider.profile) {
-        credentials = new s3.AWS.SharedIniFileCredentials({
+        credentials = new AWS.SharedIniFileCredentials({
           profile: this.serverless.service.provider.profile
         });
       }
