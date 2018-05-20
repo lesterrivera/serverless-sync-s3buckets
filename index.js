@@ -225,12 +225,25 @@ class ServerlessSyncS3Buckets {
         this.cli.consoleLog(`${cliPrefix}${chalk.yellow(message)}`);
     }
 
+    // helper method to check if a credentials profile is specified in serverless.yml and, if so, use it.
+    getCredentials() {
+      let credentials = null;
+      if (this.serverless.service.provider.profile) {
+        credentials = new AWS.SharedIniFileCredentials({
+          profile: this.serverless.service.provider.profile
+        });
+      }
+
+      return credentials;
+    }
+    
     // Generates the S3 client for the current region
     client() {
         const provider = this.serverless.getProvider('aws');
         return s3.createClient({
             s3Client: new AWS.S3({
                 region: provider.getRegion(),
+                credentials: this.getCredentials()
             })
         });
     }
